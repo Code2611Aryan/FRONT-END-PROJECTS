@@ -1,0 +1,59 @@
+==================================================
+                TYPOGRAPHY
+==================================================
+
+LOGO FONT
+---------
+Playfair Display
+
+HEADING FONT
+------------
+Playfair Display
+
+BODY FONT
+---------
+Poppins
+
+BUTTON FONT
+-----------
+Poppins
+
+--------------------------------------------------
+
+HERO TITLE
+----------
+80px
+
+SECTION TITLE
+-------------
+56px
+
+CARD TITLE
+----------
+28px
+
+CARD PRICE
+----------
+22px
+
+BODY TEXT
+---------
+18px
+
+SMALL TEXT
+----------
+16px
+
+BUTTON TEXT
+-----------
+16px
+
+NAVBAR
+-------
+18px
+
+FOOTER
+------
+16px
+
+==================================================

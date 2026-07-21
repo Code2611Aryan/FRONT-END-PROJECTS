@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+}
+
+.nav {
+  width: 100%;
+  min-height: 90px;
+  background-image: radial-gradient(
+    circle farthest-corner at 3.2% 49.6%,
+    rgba(80, 12, 139, 0.87) 0%,
+    rgba(161, 10, 144, 0.72) 83.6%
+  );
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.left {
+  width: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.left h2 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.right {
+  width: 50%;
+  height: 25px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.buttons {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 0 8px;
+  text-decoration: none;
+  border-radius: 20px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease;
+}
+
+.buttons:hover {
+  transform: scale(1.08);
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #0f172a;
+  background: linear-gradient(
+    135deg,
+    #0f0f0f 0%,
+    #1a1a1a 25%,
+    #3d1f00 65%,
+    #8b3a00 100%
+  );
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  gap: 40px;
+}
+
+.foot {
+  min-height: 50px;
+  display: flex;
+  width: 100%;
+  background-image: radial-gradient(
+    circle farthest-corner at 3.2% 49.6%,
+    rgba(80, 12, 139, 0.87) 0%,
+    rgba(161, 10, 144, 0.72) 83.6%
+  );
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hd {
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 20px;
+  gap: 10px;
+  color: #7b1e3a;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+.hd h2 {
+  font-size: 2.5rem;
+  color: antiquewhite;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.cards_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards {
+  width: 25%;
+  height: 550px;
+  margin: 20px;
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 21px;
+  background-color: white;
+   transition: all 0.3s ease;
+}
+.cards img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  
+}
+
+
+.cards:hover{
+  transform: scale(1.05);
+  /* transform: translateY(-10px); */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.description{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.description h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+.description p{
+  font-weight: 400;
+   font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 5px;
+
+}
+.meta{
+  padding: 10px;
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.meta span{
+   font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  padding: 10px;
+
+}
+.actions{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  
+}
+
+.actions a{
+  font-size: 1.2rem;
+  box-shadow: 0 6px 15px rgba(170, 7, 107, 0.3);
+   font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 25px;
+     background-image: linear-gradient(to right, #AA076B 0%, #61045F 51%, #AA076B 100%);
+
+     transition: 0.3s;
+}
+
+
+
+.actions a:hover{
+  transform: scale(1.10);
+  box-shadow: 0 10px 25px rgba(170, 7, 107, 0.4);
+ 
+}

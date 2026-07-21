@@ -1,0 +1,48 @@
+ <div class="item">
+          <div class="leftbox">
+            <h2>BUTTER CHICKEN</h2>
+
+            <!-- ingredients -->
+            <div>
+              <h2>INGREDIENTS</h2>
+              <ul class="ingri">
+                <li>Chicken (500g)</li>
+                <li>Butter (2 tbsp)</li>
+                <li>Tomato Puree (1 cup)</li>
+                <li>Fresh Cream (½ cup)</li>
+                <li>Yogurt (¼ cup)</li>
+                <li>Ginger-Garlic Paste (1 tbsp)</li>
+                <li>Garam Masala (1 tsp)</li>
+                <li>Red Chili Powder (1 tsp)</li>
+                <li>Salt (to taste)</li>
+                <li>Fresh Coriander (for garnish)</li>
+              </ul>
+            </div>
+
+            <!-- recipe  -->
+            <div class="rec">
+              <h2>RECIPE</h2>
+              <ol>
+                <li>
+                  Marinate the chicken with yogurt, ginger-garlic paste, red
+                  chili powder, and salt for 30 minutes.
+                </li>
+                <li>Heat butter in a pan over medium heat.</li>
+                <li>Cook the marinated chicken until lightly browned.</li>
+                <li>Add tomato puree and cook for 5 to 7 minutes.</li>
+                <li>Sprinkle garam masala and mix well.</li>
+                <li>
+                  Pour in the fresh cream and stir until the sauce is smooth.
+                </li>
+                <li>Simmer the curry for 8 to 10 minutes on low heat.</li>
+                <li>Taste and adjust the salt if needed.</li>
+                <li>Garnish with freshly chopped coriander leaves.</li>
+                <li>Serve hot with naan, roti, or steamed basmati rice.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="rightbox">
+            <img src="butter chicken.png" alt="">
+
+          </div>
+        </div>
