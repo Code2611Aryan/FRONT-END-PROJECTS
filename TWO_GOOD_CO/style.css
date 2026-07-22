@@ -12,10 +12,96 @@ html,body{
       overflow-x: hidden;
 }
 
+.cursur{
+    height: 200px;
+    width: 200px;
+    background-color: #C9B8FF;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+
+
+
 @font-face{
     font-family:"Futura";
     src:url("./assets/fonts/Futura-Bold.ttf") format("truetype");
 }
+
+
+.nav{
+    width: 100vw;
+    position: fixed;
+    z-index: 99;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start ;
+
+}
+
+.nav-part1{
+    width: 60vw;
+    height: 83px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+     position:relative;
+}
+
+.nav-part1 svg {
+    display: block;
+}
+
+.nav-part1 svg:nth-child(2){
+    position:absolute;
+    top:83px;          /* pehle logo ke bilkul niche */
+    left:22px;         /* center karne ke liye adjust */
+}
+
+.nav-part2{
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+
+}
+
+.links{
+     width:70%;
+     display: flex;
+     justify-content: space-evenly;
+}
+
+.links a{
+    
+    text-transform: uppercase;
+
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 30px;
+}
+
+.icons {
+    width: 15%;
+   display: flex;
+   justify-content: space-around;
+
+}
+.icons i{
+     font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+   
+}
+
+
+
 
 .page1{
     position: relative;
@@ -78,11 +164,10 @@ html,body{
 }
 
 .page2 .elem{
-    height: 100%;
+   height: 100%;
     width: 32%;
-    /* background-color: red; */
     overflow: hidden;
-    
+    position: relative;
 }
 
 .page2 .elem img{
@@ -91,6 +176,110 @@ html,body{
     object-fit: cover;
     scale: 1.2;
 }
+.contentbox{
+    height: 50px;
+
+    width: 50%;
+    position: absolute;
+    background-color: #FBEFEF;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+      transform: translateX(-50%);
+     overflow: hidden;
+      transition: all 0.35s ease;
+}
+
+.contentbox:hover {
+    height: 250px;
+}
+.top{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom{
+    height: 0;
+    overflow: hidden;
+    transition: height .35s ease;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFE2E2;
+}
+
+.contentbox:hover .bottom{
+    height: 200px;
+}
+
+.page3_text {
+   font-family:"Futura",sans-serif;
+    font-size:2.5vw;
+    text-transform:uppercase;
+   line-height: 0.75;
+    letter-spacing:-0.08em;
+    font-weight:700;
+    color:#111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.page3{
+    margin-top: 10vw;
+    min-height: 110vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.page3_text .text1{
+    font-family:"Futura",sans-serif;
+    font-size:2.5vw;
+    text-transform:uppercase;
+    line-height:0.75;
+    letter-spacing:-0.08em;
+    font-weight:700;
+    color:#111;
+}
+
+
+.child{
+    height: 54vh;
+    width: 36vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child img{
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:500px) {
 

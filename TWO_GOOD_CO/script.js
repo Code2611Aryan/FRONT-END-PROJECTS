@@ -1,69 +1,135 @@
+// LOCOMOTIVE SCROLL
 
-
- const locoScroll = new LocomotiveScroll({
-    el: document.querySelector(".main"),
-    smooth: true,
-     multiplier: 1, // Scroll speed
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector(".main"),
+  smooth: true,
+  multiplier: 1,
   lerp: 0.08,
+});
+
+
+setTimeout(() => {
+  locoScroll.update();
+}, 500);
+
+
+// VIDEO PLAY BUTTON ANIMATION
+
+function videoAnimation() {
+
+  let videoBox = document.querySelector(".video-box");
+  let playBtn = document.querySelector(".play");
+
+
+  videoBox.addEventListener("mouseenter", function () {
+
+    gsap.to(playBtn, {
+      scale: 1,
+      opacity: 1,
+      duration: 0.3
+    });
+
   });
 
-  setTimeout(() => {
-  locoScroll.update();
-}, 500); 
 
-// ADDING THE PLAY BUTTON IN TBE VIDEO OF THE HERO SECTION
-function videoanimation(){
-    let videobox = document.querySelector(".video-box")
-let plybtn = document.querySelector(".play")
-videobox.addEventListener("mouseenter",function(){
-    gsap.to(plybtn,{
-        scale:1,
-        opacity:1
+  videoBox.addEventListener("mouseleave", function () {
+
+    gsap.to(playBtn, {
+      scale: 0,
+      opacity: 0,
+      duration: 0.3
     });
 
-});
+  });
 
-videobox.addEventListener("mouseleave",function(){
-     gsap.to(plybtn,{
-        scale:0,
-        opacity:0
+
+  videoBox.addEventListener("mousemove", function (dets) {
+
+    gsap.to(playBtn, {
+      left: dets.offsetX,
+      top: dets.offsetY,
+      duration:0.3
     });
 
-});
-
-videobox.addEventListener("mousemove", function(dets){
-    gsap.to(plybtn,{
-        left: dets.offsetX,
-        top: dets.offsetY
-    })
-});
+  });
 
 }
 
-videoanimation();
+videoAnimation();
 
-// NOW EDITING THE ANIMATION OF THE MAIN TEXT OF THE HERO SECTION 
 
-function textanimation(){
-    let text = document.querySelectorAll(".text");
-    gsap.from(text,{
+
+// HERO TEXT + VIDEO ANIMATION
+
+function textAnimation(){
+
+  let text = document.querySelectorAll(".page1 .text");
+
+
+  gsap.from(text, {
+
     y:100,
     opacity:0,
-    delay:0.5,
-    duration:0.9,
-    stagger:0.3
-});
- gsap.from(".page1 .video-box",{
+    duration:1,
+    stagger:0.3,
+    ease:"power3.out"
+
+  });
+
+
+
+  gsap.from(".page1 .video-box",{
+
     scale:0.9,
     opacity:0,
-    delay:1.3,
-    duration:0.5,
-});
+    duration:0.8,
+    delay:0.8,
+    ease:"power3.out"
+
+  });
+
 
 }
 
-textanimation();
+
+textAnimation();
 
 
 
+// UPDATE LOCOMOTIVE AFTER EVERYTHING LOADS
 
+window.addEventListener("load",()=>{
+
+  locoScroll.update();
+
+});
+
+let child = document.querySelector(".child");
+let cursur = document.querySelector(".cursur");
+child.addEventListener("mouseenter",function(dets){
+     gsap.to(cursur,{
+        scale:1,
+        opacity:1,
+        duration:0.3
+    });
+});
+
+child.addEventListener("mouseleave", function(){
+
+    gsap.to(cursur,{
+        scale:0,
+        opacity:0,
+        duration:0.3
+    });
+
+});
+
+child.addEventListener("mousemove", function(dets){
+
+    gsap.to(cursur,{
+        left:dets.clientX,
+        top:dets.clientY,
+        duration:0.2
+    });
+
+});
