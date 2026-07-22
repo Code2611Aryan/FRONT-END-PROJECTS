@@ -104,9 +104,9 @@ window.addEventListener("load",()=>{
 
 });
 
-let child = document.querySelector(".child");
+let page3 = document.querySelector(".page3");
 let cursur = document.querySelector(".cursur");
-child.addEventListener("mouseenter",function(dets){
+page3.addEventListener("mouseenter",function(dets){
      gsap.to(cursur,{
         scale:1,
         opacity:1,
@@ -114,7 +114,7 @@ child.addEventListener("mouseenter",function(dets){
     });
 });
 
-child.addEventListener("mouseleave", function(){
+page3.addEventListener("mouseleave", function(){
 
     gsap.to(cursur,{
         scale:0,
@@ -124,7 +124,7 @@ child.addEventListener("mouseleave", function(){
 
 });
 
-child.addEventListener("mousemove", function(dets){
+page3.addEventListener("mousemove", function(dets){
 
     gsap.to(cursur,{
         left:dets.clientX,
